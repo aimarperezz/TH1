@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Aimar Perez (Contacto)</title>
+  <meta charset="UTF-8">
+  <link rel="icon" href="">
+  <link rel="stylesheet" type="text/css" href="THI-E1.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="página 1.html">Sobre mí</a>
+      <a href="página 2.html">Portafolio</a>
+      <a href="página 3.html">Contacto</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Formulario de Contacto: Aimar Perez</h1>
+    <p>Completa el siguiente formulario para ponerte en contacto conmigo.</p>
+    <form action="server.php" method="get">
+      <fieldset>
+        <legend>Información Personal</legend>
+        <label for="id-nombre">Tu Nombre: </label>
+        <input type="text" name="nombre" id="id-nombre">
+        <br><br>
+        <label for="id-email">Correo Electrónico: </label>
+        <input type="email" name="email" id="id-email">
+      </fieldset>
+      <fieldset>
+        <legend>Mensaje</legend>
+        <label for="id-motivo">Motivo del Contacto: </label>
+        <select id="id-motivo" name="motivo">
+          <option selected>Casting</option>
+          <option>Consulta</option>
+          <option>Comentario</option>
+        </select>
+        <br><br>
+        <textarea name="mensaje" rows="6" cols="30" placeholder="Escribe tu mensaje aquí"></textarea>
+      </fieldset>
+      <br>
+      <input type="checkbox" name="condiciones" id="id-condiciones" value="1">
+      <label for="id-condiciones">Acepto los términos y condiciones</label>
+      <br><br>
+      <input type="submit" name="enviar" value="Enviar">
+    </form>
+  </main>
+</body>
+</html>
